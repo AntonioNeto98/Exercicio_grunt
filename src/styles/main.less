@@ -1,0 +1,51 @@
+@corDoFundo: #2c3e50;
+@corDoTexto: #fff;
+@corDoBotao: #27ae60;
+
+
+body {
+    background-color: @corDoFundo;
+    color: @corDoTexto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 980px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#frase {
+display: flex;
+justify-content: space-between;
+
+    .formu {
+        display: flex;
+        align-items: end;
+
+        label {
+            font-size: 24px;
+            margin-right: 6px;
+            font-weight: bold;
+        }
+        
+        input {
+            border: none;
+            background-color: transparent;
+            border-bottom: 3px solid #fff;
+            color: @corDoTexto;
+            font-size: 16px;
+            align-items: center;
+        }
+    }
+
+    button {
+        padding: 10px;
+        background-color: @corDoBotao;
+        color: @corDoTexto;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 26px;
+        border-radius: 8px;
+    }
+}
